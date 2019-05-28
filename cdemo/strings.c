@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 int main()
 {
   char string[] = "abcdefghijklmnopqrstuvwxyz";
@@ -14,7 +14,7 @@ int main()
   else
     printf("the strings are different\n");
 
-  for (int i=0; i<26)
+  for (int i=0; i<26; i++)
   {
   mystring[i]='a'- 32;
   }
@@ -23,6 +23,7 @@ int main()
     else
 printf("the strings are different\n");
 char str1[52];
-str1 = strcat(string, mystring); 
-printf("%s, %s, %s", string, mystring, str1)
+strcpy(str1, string);
+strcat(str1, mystring); 
+printf("%s, %s, %s \n", string, mystring, str1);
 }
