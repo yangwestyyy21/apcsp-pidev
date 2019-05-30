@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int Function1(int i, int area)
+        {
+        area = i * i * 3.14;
+        }
+
+int main()
+{
+  char input[256];
+  int i;
+  printf("What is the radius you want to input?\n", i);
+  while (1)
+  {
+  fgets(input, 256, stdin);
+  if (sscanf(input, "%d", &i) == 1) break;
+  printf("Not a valid number - try again!\n");
+  }
+  
+  int area;
+  
+  Function1(i, area);
+  printf("The area of the circle is %f when radius is %f\n", area, i);
+         
+
+}
