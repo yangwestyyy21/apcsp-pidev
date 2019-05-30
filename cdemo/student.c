@@ -7,8 +7,8 @@ int id;
 };
 void printStudent(struct Student* student)
 {
-printf(" first name:%s\n", Student->firstname);
-printf(" last name:%s\n", Student->lastname);
-printf(" age:%s\n", Student->age);
-printf(" student ID:%d\n", Student->id);
+printf(" first name:%s\n", student->firstname);
+printf(" last name:%s\n", student->lastname);
+printf(" age:%s\n", student->age);
+printf(" student ID:%d\n", student->id);
 }
